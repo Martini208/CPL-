@@ -13,7 +13,6 @@
       padding: 0;
     }
 
-    /* Fixierte Top-Leiste */
     .top-bar {
       position: fixed;
       top: 0;
@@ -27,13 +26,11 @@
       z-index: 1000;
     }
 
-    /* CPL Logo */
     .top-bar img {
       width: 70px;
       margin-right: 20px;
     }
 
-    /* Navigation */
     .nav {
       display: flex;
       gap: 15px;
@@ -55,12 +52,10 @@
       background: #b30000;
     }
 
-    /* Abstand unter der fixierten Leiste */
     .spacer {
       height: 120px;
     }
 
-    /* Abschnitt-Titel */
     .section-title {
       font-size: 32px;
       font-weight: bold;
@@ -68,27 +63,16 @@
       text-align: center;
     }
 
-    /* Logo-Grid – große Boliden, maximal 3 pro Reihe */
-    .logo-grid {
+    /* ---------------- LOGO GRID ---------------- */
+    .logo-grid.logo-section {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-      gap: 50px;
-      max-width: 1600px;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 40px;
+      max-width: 1200px;
       margin: 0 auto;
       padding: 20px;
     }
 
-    /* Bilder deutlich größer */
-    .logo-grid img {
-      width: 100%;
-      max-width: 450px;
-      border-radius: 10px;
-      background: #f2f2f2;
-      padding: 20px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-    }
-
-    /* Logo-Grid für Logos – einheitliche Größe */
     .logo-grid.logo-section img {
       width: 180px;
       height: 180px;
@@ -99,14 +83,23 @@
       box-shadow: 0 2px 8px rgba(0,0,0,0.15);
     }
 
-    /* Grid für Logos – ordentliche Reihen */
-    .logo-grid.logo-section {
+    /* ---------------- BOLID GRID ---------------- */
+    .logo-grid.bolid-section {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 40px;
-      max-width: 1200px;
+      grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+      gap: 50px;
+      max-width: 1600px;
       margin: 0 auto;
       padding: 20px;
+    }
+
+    .logo-grid.bolid-section img {
+      width: 100%;
+      max-width: 450px;
+      border-radius: 10px;
+      background: #f2f2f2;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
     }
 
   </style>
@@ -114,7 +107,6 @@
 
 <body>
 
-  <!-- Fixierte Leiste -->
   <div class="top-bar">
     <img src="CPL.png" alt="CPL Logo">
 
@@ -130,7 +122,7 @@
 
   <div class="spacer"></div>
 
-  <!-- Abschnitt 1 -->
+  <!-- Abschnitt 1: LOGOS -->
   <div id="f1logo" class="section-title">F1 Logo</div>
   <div class="logo-grid logo-section">
     <img src="Alpine.png" alt="Alpine">
@@ -146,9 +138,9 @@
     <img src="haas.png" alt="Haas">
   </div>
 
-  <!-- Abschnitt 2 -->
+  <!-- Abschnitt 2: BOLIDEN -->
   <div id="bolidy" class="section-title">F1 Bolidy</div>
-  <div class="logo-grid">
+  <div class="logo-grid bolid-section">
     <img src="Bolid_Alpine.png" alt="Bolid Alpine">
     <img src="Bolid_Aston.png" alt="Bolid Aston Martin">
     <img src="Bolid_Audi.png" alt="Bolid Audi">
@@ -161,22 +153,6 @@
     <img src="Bolid_Cadillac.png" alt="Bolid Cadillac">
     <img src="Bolid_Haas.png" alt="Bolid Haas">
   </div>
-
-  <!-- Abschnitt 3 -->
-  <div id="flagi" class="section-title">Flagi</div>
-  <div class="logo-grid"></div>
-
-  <!-- Abschnitt 4 -->
-  <div id="tory" class="section-title">Tory</div>
-  <div class="logo-grid"></div>
-
-  <!-- Abschnitt 5 -->
-  <div id="opony" class="section-title">Opony</div>
-  <div class="logo-grid"></div>
-
-  <!-- Abschnitt 6 -->
-  <div id="piktogramy" class="section-title">Piktogramy</div>
-  <div class="logo-grid"></div>
 
 </body>
 </html>
