@@ -68,24 +68,26 @@
       text-align: center;
     }
 
-    /* Logo-Grid */
-    .logo-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 50px;
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 20px;
-    }
+/* Logo-Grid – große Boliden, maximal 3 pro Reihe */
+.logo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); /* noch größere Spalten */
+  gap: 50px;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 20px;
+}
 
-    /* >>>>> NEUER CSS-BLOCK FÜR GROßE BOLIDEN <<<<< */
-    .logo-grid img {
-      width: 300px; /* Größere Boliden */
-      border-radius: 10px;
-      background: #f2f2f2;
-      padding: 20px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-    }
+/* Bilder deutlich größer */
+.logo-grid img {
+  width: 100%;
+  max-width: 450px; /* echte große Boliden */
+  border-radius: 10px;
+  background: #f2f2f2;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
   </style>
 </head>
 
