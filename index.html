@@ -2,41 +2,113 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>CPL – F1 Logos</title>
+  <title>F1 Logos</title>
+
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #111;
-      color: #eee;
+      background: #fff;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Fixierte Top-Leiste */
+    .top-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      background: #c40000;
+      padding: 10px 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      z-index: 1000;
+    }
+
+    /* CPL Logo */
+    .top-bar img {
+      width: 70px;
+      margin-right: 20px;
+    }
+
+    /* Navigation */
+    .nav {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .nav a {
+      background: #ff0000;
+      color: white;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 18px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    .nav a:hover {
+      background: #b30000;
+    }
+
+    /* Abstand unter der fixierten Leiste */
+    .spacer {
+      height: 120px;
+    }
+
+    /* Abschnitt-Titel */
+    .section-title {
+      font-size: 32px;
+      font-weight: bold;
+      margin: 40px 0 20px;
       text-align: center;
-      padding: 40px;
     }
 
-    h1 {
-      margin-bottom: 40px;
-    }
-
+    /* Logo-Grid */
     .logo-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 50px; /* Abstand zwischen den Logos */
+      gap: 50px;
       max-width: 1200px;
       margin: 0 auto;
+      padding: 20px;
     }
 
     .logo-grid img {
       width: 150px;
       border-radius: 10px;
-      background: #222;
-      padding: 20px; /* Innenabstand */
+      background: #f2f2f2;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
     }
   </style>
 </head>
+
 <body>
-  <h1>CPL – F1 Logos</h1>
 
+  <!-- Fixierte Leiste -->
+  <div class="top-bar">
+    <img src="CPL.png" alt="CPL Logo">
+
+    <div class="nav">
+      <a href="#f1logo">F1 Logo</a>
+      <a href="#bolidy">F1 Bolidy</a>
+      <a href="#flagi">Flagi</a>
+      <a href="#tory">Tory</a>
+      <a href="#opony">Opony</a>
+      <a href="#piktogramy">Piktogramy</a>
+    </div>
+  </div>
+
+  <div class="spacer"></div>
+
+  <!-- Abschnitt 1 -->
+  <div id="f1logo" class="section-title">F1 Logo</div>
   <div class="logo-grid">
-
     <img src="Alpine.png" alt="Alpine">
     <img src="Aston Martin.jpg" alt="Aston Martin">
     <img src="Audi.jpg" alt="Audi">
@@ -48,7 +120,36 @@
     <img src="Visa_cash.png" alt="Visa Cash">
     <img src="cadillac-blk-logo.png" alt="Cadillac">
     <img src="haas.png" alt="Haas">
+  </div>
 
+  <!-- Abschnitt 2 -->
+  <div id="bolidy" class="section-title">F1 Bolidy</div>
+  <div class="logo-grid">
+    <!-- Hier kommen später die Bolidy-Bilder -->
+  </div>
+
+  <!-- Abschnitt 3 -->
+  <div id="flagi" class="section-title">Flagi</div>
+  <div class="logo-grid">
+    <!-- Hier kommen später die Flaggen -->
+  </div>
+
+  <!-- Abschnitt 4 -->
+  <div id="tory" class="section-title">Tory</div>
+  <div class="logo-grid">
+    <!-- Hier kommen später die Strecken -->
+  </div>
+
+  <!-- Abschnitt 5 -->
+  <div id="opony" class="section-title">Opony</div>
+  <div class="logo-grid">
+    <!-- Hier kommen später die Reifen -->
+  </div>
+
+  <!-- Abschnitt 6 -->
+  <div id="piktogramy" class="section-title">Piktogramy</div>
+  <div class="logo-grid">
+    <!-- Hier kommen später die Piktogramy -->
   </div>
 
 </body>
