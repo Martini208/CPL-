@@ -14,7 +14,7 @@ body {
   padding: 0;
 }
 
-/* ---------------- TOP BAR ---------------- */
+/* ---------------- TOP BAR (APPLE STYLE RED) ---------------- */
 .top-bar {
   position: fixed;
   top: 0;
@@ -22,27 +22,30 @@ body {
   width: 100%;
   display: flex;
   align-items: center;
-  background: rgba(255,255,255,0.85);
-  backdrop-filter: blur(20px);
-  padding: 12px 30px;
-  box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+
+  /* Apple glossy effect but in red */
+  background: rgba(196, 0, 0, 0.85); /* dein Rot + Apple Transparenz */
+  backdrop-filter: blur(20px);       /* Apple Blur */
+
+  padding: 14px 40px;                /* Apple spacing */
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15); /* Apple shadow */
   z-index: 1000;
 }
 
 .top-bar img {
-  width: 60px;
-  margin-right: 25px;
+  width: 65px;                       /* Apple sizing */
+  margin-right: 30px;
 }
 
-/* ---------------- NAVIGATION ---------------- */
+/* Navigation im Apple‑Look aber rot */
 .nav {
   display: flex;
   gap: 20px;
 }
 
 .nav a {
-  color: #333;
-  padding: 10px 16px;
+  color: #fff;
+  padding: 10px 18px;
   border-radius: 12px;
   font-weight: 600;
   text-decoration: none;
@@ -51,7 +54,7 @@ body {
 }
 
 .nav a:hover {
-  background: #e5e5e5;
+  background: rgba(255,255,255,0.25); /* Apple hover, aber passend zu rot */
 }
 
 /* ---------------- SPACER ---------------- */
