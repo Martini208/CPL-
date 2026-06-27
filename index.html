@@ -23,8 +23,8 @@ body {
   display: flex;
   align-items: center;
 
-  background: rgba(196, 0, 0, 0.55); /* mehr Transparenz */
-  backdrop-filter: blur(30px) saturate(180%); /* stärkerer Apple Blur */
+  background: rgba(196, 0, 0, 0.55);
+  backdrop-filter: blur(30px) saturate(180%);
 
   padding: 16px 45px;
   box-shadow: 0 12px 35px rgba(0,0,0,0.25);
@@ -34,6 +34,12 @@ body {
 .top-bar img {
   width: 70px;
   margin-right: 35px;
+}
+
+/* neues Bild rechts neben CPL */
+.top-bar .seasonpack {
+  width: 220px;
+  margin-left: 20px;
 }
 
 /* Navigation im Apple‑Look aber rot */
@@ -99,12 +105,16 @@ body {
   box-shadow: 0 20px 40px rgba(0,0,0,0.12);
 }
 
-/* ---------------- BOLID SECTION (original big size) ---------------- */
+/* ---------------- BOLID SECTION (bigger images + fewer per row) ---------------- */
+.logo-grid.bolid-section {
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr)); /* nur 1–2 pro Reihe */
+}
+
 .logo-grid.bolid-section img {
   width: 100%;
-  max-width: 500px;   /* wieder groß */
+  max-width: 650px;   /* deutlich größer */
   height: auto;
-  padding: 25px;
+  padding: 30px;
   border-radius: 25px;
   box-shadow: 0 12px 35px rgba(0,0,0,0.12);
 }
@@ -115,6 +125,9 @@ body {
 
   <div class="top-bar">
     <img src="CPL.png" alt="CPL Logo">
+
+    <!-- neues Bild -->
+    <img src="EAS_F125_2026_SeasonPack_Horizontal_Black.png" class="seasonpack" alt="Season Pack">
 
     <div class="nav">
       <a href="#f1logo">F1 Logo</a>
@@ -163,7 +176,6 @@ body {
   <!-- Abschnitt 3: FLAGI -->
   <div id="flagi" class="section-title">Flagi</div>
   <div class="logo-grid logo-section">
-
     <img src="Catalonia.png" alt="Catalonia">
     <img src="Emilia-Romagna.png" alt="Emilia Romagna">
     <img src="Flag_of_the_United_Arab_Emirates.svg.png" alt="VAE">
@@ -189,24 +201,20 @@ body {
     <img src="vereinigte-staaten.png" alt="USA">
     <img src="vereinigtes-konigreich.png" alt="UK">
     <img src="welt.png" alt="Welt">
-
   </div>
 
 <!-- Abschnitt 4: TORY -->
 <div id="tory" class="section-title">Tory</div>
 <div class="logo-grid logo-section">
-
     <img src="2026trackaustindetailed.png" alt="Austin">
     <img src="2026trackbakudetailed.png" alt="Baku">
     <img src="2026trackcatalunyadetailed (1).png" alt="Catalunya">
     <img src="2026trackhungaroringdetailed.png" alt="Hungaroring">
     <img src="2026trackinterlagosdetailed.png" alt="Interlagos">
     <img src="2026tracklasvegasdetailed.png" alt="Las Vegas">
-
     <img src="2026trackmontecarlodetailed.png" alt="Monte Carlo">
     <img src="2026trackspielbergedetailed.png" alt="Spielberg">
     <img src="2026tracksyamarincircuitdetailed.png" alt="Yas Marina">
-
     <img src="2026trackmelbournedetailed.png" alt="Melbourne">
     <img src="2026trackmexicocitydetailed.png" alt="Mexico City">
     <img src="2026trackmiamidetailed.png" alt="Miami">
@@ -219,33 +227,27 @@ body {
     <img src="2026trackspafrancorchampsdetailed.png" alt="Spa Francorchamps">
     <img src="2026tracksuzukadetailed (1).png" alt="Suzuka">
     <img src="2026trackzandvoortdetailed.png" alt="Zandvoort">
-
     <img src="Qatar_Circuit.png" alt="Katar Circuit">
     <img src="Emilia_Romagna_Circuit.png" alt="Emilia Romagna Circuit">
-
 </div>
 
   <!-- Abschnitt 5: OPONY -->
 <div id="opony" class="section-title">Opony</div>
 <div class="logo-grid logo-section">
-
     <img src="softy.PNG" alt="Soft">
     <img src="Medy.PNG" alt="Medium">
     <img src="Hardy.PNG" alt="Hard">
     <img src="Intery.PNG" alt="Intermediate">
     <img src="Wetty.PNG" alt="Wet">
-
 </div>
 
   <!-- Abschnitt 6: PIKTOGRAMY -->
 <div id="piktogramy" class="section-title">Piktogramy</div>
 <div class="logo-grid logo-section">
-
     <img src="wolken-und-sonne.png" alt="Wolken und Sonne">
     <img src="wolkig.png" alt="Wolkig">
     <img src="regen.png" alt="Regen">
     <img src="sonnig.png" alt="Sonnig">
-
 </div>
 
 </body>
