@@ -14,7 +14,7 @@ body {
   padding: 0;
 }
 
-/* ---------------- TOP BAR (APPLE STYLE RED) ---------------- */
+/* ---------------- TOP BAR (APPLE STYLE RED, MORE GLASS) ---------------- */
 .top-bar {
   position: fixed;
   top: 0;
@@ -23,18 +23,17 @@ body {
   display: flex;
   align-items: center;
 
-  /* Apple glossy effect but in red */
-  background: rgba(196, 0, 0, 0.85); /* dein Rot + Apple Transparenz */
-  backdrop-filter: blur(20px);       /* Apple Blur */
+  background: rgba(196, 0, 0, 0.55); /* mehr Transparenz */
+  backdrop-filter: blur(30px) saturate(180%); /* stärkerer Apple Blur */
 
-  padding: 14px 40px;                /* Apple spacing */
-  box-shadow: 0 8px 25px rgba(0,0,0,0.15); /* Apple shadow */
+  padding: 16px 45px;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.25);
   z-index: 1000;
 }
 
 .top-bar img {
-  width: 65px;                       /* Apple sizing */
-  margin-right: 30px;
+  width: 70px;
+  margin-right: 35px;
 }
 
 /* Navigation im Apple‑Look aber rot */
@@ -54,7 +53,7 @@ body {
 }
 
 .nav a:hover {
-  background: rgba(255,255,255,0.25); /* Apple hover, aber passend zu rot */
+  background: rgba(255,255,255,0.25);
 }
 
 /* ---------------- SPACER ---------------- */
@@ -100,11 +99,14 @@ body {
   box-shadow: 0 20px 40px rgba(0,0,0,0.12);
 }
 
-/* ---------------- BOLID SECTION (bigger images) ---------------- */
+/* ---------------- BOLID SECTION (original big size) ---------------- */
 .logo-grid.bolid-section img {
+  width: 100%;
+  max-width: 500px;   /* wieder groß */
   height: auto;
-  padding: 30px;
+  padding: 25px;
   border-radius: 25px;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.12);
 }
   </style>
 </head>
